@@ -1,0 +1,46 @@
+Car MPG Predictor from Horsepower
+========================================================
+author: Aldreen Venzon  
+date: 1.10.2019
+autosize: true
+
+Overview
+========================================================
+This is a presentation on the Car MPG Predictor using Horsepower. 
+
+The following slides will cover:
+- Files used
+- Dataset used
+- How to use the app
+- Results to expect
+
+
+Files
+========================================================
+- The application is built using Shiny app containing a 'ui.R' and 'server.R' files. 
+- This presentation is in the 'CarApp.Rpres' file. 
+
+
+Dataset
+========================================================
+The dataset used is from 'MTCars'. The dataset sample looks like:
+```{r echo=FALSE}
+head(mtcars, 5)
+
+```
+This application specifically uses the 'mpg' and the 'hp' columns
+
+
+How to use the App
+========================================================
+- First, the user inputs the horsepower from a slider bar
+
+![Step 1](Part1.png)
+
+
+Results
+========================================================
+- The application then uses a linear regression model to predict the MPG from the input
+- It will output both a graph and text of the prediction
+
+![Step 2](Part2.png)
